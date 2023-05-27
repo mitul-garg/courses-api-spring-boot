@@ -43,7 +43,7 @@ public class CourseServiceImpl implements CourseService {
 //			}
 //		}
 		
-		return courseDao.getReferenceById(courseId);
+		return courseDao.findById(courseId).get();
 	}
 
 	@Override
